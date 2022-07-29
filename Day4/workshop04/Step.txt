@@ -1,0 +1,9 @@
+kubectl create namespace acme
+
+cd C:\Users\zhangsl\.kube\base
+kubectl apply -k . -nacme
+
+cd C:\Users\zhangsl\.kube\tenants\acme
+kubectl apply -k . -nacme
+
+http://acme-144.126.243.25.nip.io/wp-admin/install.php
